@@ -1,0 +1,18 @@
+[package]
+name = "iota-sign"
+version = "0.1.0"
+authors = ["Paul D Handy <paul@pauldhandy.com>",
+           "Andreas C. Osowski <andreas@osowski.de>"]
+keywords = ["no_std"]
+
+[features]
+default = []
+
+[dependencies]
+iota-curl = { path = "../curl" }
+iota-trytes = { path = "../trytes" }
+iota-tmath = { path = "../tmath" }
+iota-kerl = { path = "../kerl" }
+
+[dev-dependencies]
+iota-curl-cpu = { path = "../curl-cpu" }

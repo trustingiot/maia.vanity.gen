@@ -1,0 +1,37 @@
+[package]
+name = "vanity"
+version = "1.0.1"
+authors = ["Fco Javier Estrella <francisco.javier.estrella@gmail.com>"]
+
+[workspace]
+members = [
+        "merkle",
+        "curl",
+        "curl-cpu",
+        "trytes",
+        "tmath",
+        "sign",
+        "kerl"
+        ]
+
+[features]
+default = []
+parallel = []
+
+[dependencies]
+iota-merkle = { path = "merkle" }
+iota-curl = { path = "curl" }
+iota-trytes = { path = "trytes" }
+iota-tmath = { path = "tmath" }
+iota-sign = { path = "sign" }
+iota-curl-cpu = { path = "curl-cpu" }
+rand = "0.3.15"
+
+[dev-dependencies]
+iota-curl-cpu = { path = "curl-cpu" }
+
+[dev-dependencies.iota-trytes]
+path = "trytes"
+features = ["alloc"]
+
+

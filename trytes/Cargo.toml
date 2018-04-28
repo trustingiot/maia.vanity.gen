@@ -1,0 +1,12 @@
+[package]
+name = "iota-trytes"
+version = "0.1.0"
+keywords = ["no_std"]
+authors = [
+        "Paul D Handy <paul.d.handy@gmail.com>",
+        "Andreas C. Osowski <andreas@osowski.de>"
+        ]
+
+[features]
+default = []
+alloc = []

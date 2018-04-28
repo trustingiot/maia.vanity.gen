@@ -1,0 +1,16 @@
+[package]
+name = "iota-curl-cpu"
+version = "0.1.0"
+authors = ["Paul D Handy <paul@pauldhandy.com>",
+           "Andreas C. Osowski <andreas@osowski.de>"]
+keywords = ["no_std"]
+
+[features]
+default = []
+parallel = ["num_cpus"]
+
+[dependencies]
+iota-tmath = { path = "../tmath" }
+iota-trytes = { path = "../trytes" }
+iota-curl = { path = "../curl" }
+num_cpus = {version = "1.6.2", optional = true }
